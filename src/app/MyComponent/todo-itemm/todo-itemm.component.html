@@ -1,0 +1,61 @@
+<div class="my-3">
+    <h2>{{todo.title}}</h2>
+    <p class="mt-2">{{todo.description}}</p>
+    <button class="btn btn-danger" (click)="onClick(todo)">
+        Delete
+    </button>
+    <button class="btn btn-success mx-3" >
+        Edit
+    </button>
+</div>
+
+<!-- furthur reference for using modal for edit and delete buton -->
+
+<!-- data-bs-toggle="modal" data-bs-target="#deleteConfirm" -->
+<!-- data-bs-toggle="modal" data-bs-target="#editTodo" --> 
+
+
+<!-- Modal Body
+<div class="modal fade" id="deleteConfirm" tabindex="-1" role="dialog" aria-labelledby="modalTitleId"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTitleId">
+                    Delete Confirmation
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body fw-bold">Are You Sure You Want to Delete this Todo &quest;</div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                    Close
+                </button>
+                <button type="button" class="btn btn-primary">Yes</button>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<!-- Modal Body -->
+
+<!-- <div class="modal fade" id="editTodo" tabindex="-1"  role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTitleId">
+                    Edit Todo
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">Body</div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                    Close
+                </button>
+                <button type="button" class="btn btn-primary">Save</button>
+            </div>
+        </div>
+    </div>
+</div> -->
+
