@@ -33,7 +33,7 @@ export class TodosComponent {
         description: 'Complete TypeScript assignment.',
         active: true,
       },
-    ];
+    ]; 
   }
 
   //handle the delete logic
