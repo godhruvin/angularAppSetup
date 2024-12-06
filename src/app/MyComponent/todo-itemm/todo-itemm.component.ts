@@ -12,9 +12,14 @@ import { TodosComponent } from '../todos/todos.component';
 export class TodoItemmComponent {
   @Input() todo!:Todo;
   @Output() tododelete : EventEmitter<Todo> = new EventEmitter();
+  @Output() tocheckboxactive : EventEmitter<Todo> = new EventEmitter();
  
   onClick(todo:Todo){
     console.log("function is called");
     this.tododelete.emit(todo); //emit the todo to parent component
+  }
+  onCheckClick(todo:Todo){
+    console.log("checkbox called");
+    this.tocheckboxactive.emit(todo);
   }
 }

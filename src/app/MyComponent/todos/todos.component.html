@@ -1,6 +1,18 @@
-<div *ngFor="let todo of todos">
-    <app-todo-itemm [todo]="todo" (tododelete)="deletetodo($event)"></app-todo-itemm>
+<app-add-todo (todoAdd)="addtodo($event)" (onCheckClick)="toggleTodo($event)">
+
+</app-add-todo>
+
+<div *ngIf="this.todos.length === 0; else elseBlock">
+    <h2 class="text-center text-danger">No Todos To Display.</h2>
 </div>
+<ng-template #elseBlock>
+    <div *ngFor="let todo of todos">
+        <app-todo-itemm [todo]="todo" (tododelete)="deletetodo($event)">
+
+        </app-todo-itemm>
+    </div>
+</ng-template>
+
 
 <!-- toast when the delete is happend 
 <div class="toast align-items-center text-bg-primary border-0"  role="alert" aria-live="assertive" aria-atomic="true">
